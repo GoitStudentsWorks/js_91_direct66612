@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/js_91_direct66612/workout.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Energy</title>
+    
+    <script type="module" crossorigin src="/js_91_direct66612/assets/favorites-b6235fb3.js"></script>
+    <link rel="modulepreload" crossorigin href="/js_91_direct66612/assets/pagination-markup-44073da6.js">
+    <link rel="stylesheet" href="/js_91_direct66612/assets/pagination-markup-75dcd497.css">
+  </head>
+  <body>
+    <header class="header">
+  <div class="container header__container">
+    <nav class="header__nav">
+      <a class="logo--header" href="./index.html">
+        <svg class="logo__svg" width="132" height="24">
+          <use
+            class="logo__use"
+            href="/js_91_direct66612/assets/symbol-defs-f0e814bd.svg#icon-logo-icon"
+          ></use>
+        </svg>
+      </a>
+      <ul class="header__list">
+        <li class="list__item">
+          <a class="list__link" href="./index.html">Home</a>
+        </li>
+        <li class="list__item">
+          <a class="list__link is-active" href="./favorites.html">Favorites</a>
+        </li>
+      </ul>
+      <address>
+        <ul class="header__address">
+          <li>
+            <a
+              class="address__link"
+              href="https://www.facebook.com/goITclub/"
+              target="_blank"
+            >
+              <svg class="address__svg" width="44" height="44">
+                <use href="/js_91_direct66612/assets/symbol-defs-f0e814bd.svg#icon-header-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              class="address__link zhopa"
+              href="https://www.instagram.com/goitclub/"
+              target="_blank"
+            >
+              <svg class="address__svg" width="44" height="44">
+                <use href="/js_91_direct66612/assets/symbol-defs-f0e814bd.svg#icon-header-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              class="address__link"
+              href="https://www.youtube.com/c/GoIT"
+              target="_blank"
+            >
+              <svg class="address__svg" width="44" height="44">
+                <use href="/js_91_direct66612/assets/symbol-defs-f0e814bd.svg#icon-header-youtube"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </address>
+    </nav>
+  </div>
+  <div class="mobile-menu">
+    <div class="container">
+      <div class="mobile-menu__wrapper">
+        <a class="logo--header" href="./index.html">
+          <svg class="logo__svg" width="132" height="24">
+            <use href="/js_91_direct66612/assets/symbol-defs-f0e814bd.svg#icon-logo-icon"></use>
+          </svg>
+        </a>
+        <button class="menu-mob__open-btn" data-menu-open type="button">
+          <svg class="menu-mob__open-ico" width="32" height="32">
+            <use href="/js_91_direct66612/assets/symbol-defs-f0e814bd.svg#icon-burger-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu__wrapper--wide" data-menu>
+        <div class="container--mobile">
+          <button class="menu-mob__close-btn" data-menu-close type="button">
+            <svg class="menu-mob__close-ico" width="32" height="32">
+              <use href="/js_91_direct66612/assets/symbol-defs-f0e814bd.svg#close"></use>
+            </svg>
+          </button>
+          <nav>
+            <ul class="mobile-list">
+              <li class="mobile-list__item">
+                <a class="mobile-list__text menu-box-link" href="./index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="mobile-list__item">
+                <a
+                  class="mobile-list__text menu-box-link--s"
+                  href="./favorites.html"
+                  >Favorites</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <address>
+            <ul class="header__address--mobile">
+              <li>
+                <a
+                  class="address__link--mobile"
+                  href="https://www.facebook.com/goITclub/"
+                  target="_blank"
+                >
+                  <svg class="address__svg--mobile" width="44" height="44">
+                    <use
+                      href="/js_91_direct66612/assets/symbol-defs-f0e814bd.svg#icon-header-facebook"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="address__link--mobile"
+                  href="https://www.instagram.com/goitclub/"
+                  target="_blank"
+                >
+                  <svg class="address__svg--mobile" width="44" height="44">
+                    <use
+                      href="/js_91_direct66612/assets/symbol-defs-f0e814bd.svg#icon-header-instagram"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="address__link--mobile"
+                  href="https://www.youtube.com/c/GoIT"
+                  target="_blank"
+                >
+                  <svg class="address__svg--mobile" width="44" height="44">
+                    <use href="/js_91_direct66612/assets/symbol-defs-f0e814bd.svg#icon-header-youtube"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <main>
+      <section class="favorites">
+        <div class="container favorites-container">
+          <h2 class="favorites-title">Favorites</h2>
+          <div class="favorites-wrapper">
+            <div class="favorites-aside-content"><section class="exercises">
+  <div class="favorites-asidebar-container">
+  <div class="favorites-quote-container">
+    <div class="quote-icon-men">
+      <svg width="18" height="20">
+        <use href="/js_91_direct66612/assets/symbol-defs-f0e814bd.svg#icon-aside-men"></use>
+      </svg>
+    </div>
+    <div class="favorites-quote">
+      <div class="quote-title-container">
+        <h3 class="favorites-quote-title">Quote of the day</h3>
+        <svg class="quote-icon-marks" width="20" height="20">
+          <use href="/js_91_direct66612/assets/symbol-defs-f0e814bd.svg#icon-aside-marks"></use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="favorites-daily-sport">
+    <svg class="favorites-icon-barell" width="20" height="20">
+      <use href="/js_91_direct66612/assets/symbol-defs-f0e814bd.svg#icon-aside-barbell"></use>
+    </svg>
+    <h3 class="favorites-dailysport-title">110 min</h3>
+    <p class="favorites-dailysport-subtitle">Daily norm of sports</p>
+  </div>
+  <div class="favorites-img-container">
+    <picture>
+      <source
+        media="(max-width: 767px)"
+        srcset="/js_91_direct66612/assets/favorites-bg-mobile-6d6a0bc7.jpg 1x, /js_91_direct66612/assets/favorites-bg-mobile@2x-d20d4d9e.jpg 2x"
+      />
+      <source
+        media="(max-width: 1439px)"
+        srcset="/js_91_direct66612/assets/favorites-bg-tablet-e652ad06.jpg 1x, /js_91_direct66612/assets/favorites-bg-tablet@2x-b414245d.jpg 2x"
+      />
+      <source
+        media="(min-width: 1440px)"
+        srcset="/js_91_direct66612/assets/favorites-bg-f496eca7.jpg 1x, /js_91_direct66612/assets/favorites-bg@2x-e5699680.jpg 2x"
+      />
+      <img
+        class="favorites-asidebar-img"
+        src="/js_91_direct66612/assets/favorites-bg-mobile-6d6a0bc7.jpg"
+        alt="women sportswear taking break from workout"
+        width="335"
+        height="119"
+      />
+    </picture>
+  </div>
+</div>
+
+  
+  <div class="backdrop-ex is-hidden">
+  <div class="modal-ex is-hidden">
+    <button type="button" class="modal-close-btn">
+      <svg class="modal-close-btn-icon" width="20" height="20">
+        <use href="/js_91_direct66612/assets/symbol-defs-f0e814bd.svg#close"></use>
+      </svg>
+    </button>
+
+    <div class="ex-wrapper">
+      <img class="modal-img" src="#" alt="Name exercise" />
+      <div class="ex-info-wrapper">
+        <h2 class="ex-title">Air bake</h2>
+
+        <div class="rating-container">
+          <p class="ratinng-value">#</p>
+
+          <ul class="modal-rating-star-list">
+            <li class="modal-rating-star-item">
+              <svg class="modal-rating-star-icon" width="18" height="18">
+                <use
+                  href="/js_91_direct66612/assets/symbol-defs-f0e814bd.svg#icon-exercises-content-silver-star"
+                ></use>
+              </svg>
+            </li>
+            <li class="modal-rating-star-item">
+              <svg class="modal-rating-star-icon" width="18" height="18">
+                <use
+                  href="/js_91_direct66612/assets/symbol-defs-f0e814bd.svg#icon-exercises-content-silver-star"
+                ></use>
+              </svg>
+            </li>
+            <li class="modal-rating-star-item">
+              <svg class="modal-rating-star-icon" width="18" height="18">
+                <use
+                  href="/js_91_direct66612/assets/symbol-defs-f0e814bd.svg#icon-exercises-content-silver-star"
+                ></use>
+              </svg>
+            </li>
+            <li class="modal-rating-star-item">
+              <svg class="modal-rating-star-icon" width="18" height="18">
+                <use
+                  href="/js_91_direct66612/assets/symbol-defs-f0e814bd.svg#icon-exercises-content-silver-star"
+                ></use>
+              </svg>
+            </li>
+            <li class="modal-rating-star-item">
+              <svg class="modal-rating-star-icon" width="18" height="18">
+                <use
+                  href="/js_91_direct66612/assets/symbol-defs-f0e814bd.svg#icon-exercises-content-silver-star"
+                ></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <ul class="info-list"></ul>
+        <p class="ex-description">
+          This refers to your core muscles, which include the rectus abdominis,
+          obliques, and transverse abdominis. They're essential for maintaining
+          posture, stability, and generating force in many movements. Exercises
+          that target the abs include crunches, leg raises, and planks.
+        </p>
+      </div>
+    </div>
+    <div class="modal-btn-container">
+      <button class="btn-add-favorite" type="button">
+        Add to favorite
+        <svg
+          class="modal-heart-icon"
+          width="18"
+          height="18"
+          aria-hidden="true"
+          focusable="false"
+        >
+          <use href="/js_91_direct66612/assets/symbol-defs-f0e814bd.svg#icon-exercises-content-heart"></use>
+        </svg>
+      </button>
+      <button class="btn-give-rating" type="button" data-modal-rating-open>
+        Give a rating
+      </button>
+    </div>
+  </div>
+  <!-- <div class="backdrop"> -->
+
+<form class="rating-feedback-form visually-hidden">
+  <button class="close-rating-btn" type="button">
+    <svg class="close" width="24" height="24">
+      <use href="/js_91_direct66612/assets/symbol-defs-f0e814bd.svg#close"></use>
+    </svg>
+  </button>
+  <p class="rating-modal-title">Rating</p>
+
+  <div class="rating-stars">
+    <input class="star-radio" name="star" id="star1" type="radio" value="5" />
+    <label class="star-label" for="star1">
+      <svg class="star" width="24" height="24">
+        <use href="/js_91_direct66612/assets/symbol-defs-f0e814bd.svg#icon-form-silver-star"></use>
+      </svg>
+    </label>
+    <input class="star-radio" name="star" id="star2" type="radio" value="4" />
+    <label class="star-label" for="star2">
+      <svg class="star" width="24" height="24">
+        <use href="/js_91_direct66612/assets/symbol-defs-f0e814bd.svg#icon-form-silver-star"></use>
+      </svg>
+    </label>
+    <input class="star-radio" name="star" id="star3" type="radio" value="3" />
+    <label class="star-label" for="star3">
+      <svg class="star" width="24" height="24">
+        <use href="/js_91_direct66612/assets/symbol-defs-f0e814bd.svg#icon-form-silver-star"></use>
+      </svg>
+    </label>
+    <input class="star-radio" name="star" id="star4" type="radio" value="2" />
+    <label class="star-label" for="star4">
+      <svg class="star" width="24" height="24">
+        <use href="/js_91_direct66612/assets/symbol-defs-f0e814bd.svg#icon-form-silver-star"></use>
+      </svg>
+    </label>
+    <input class="star-radio" name="star" id="star5" type="radio" value="1" />
+    <label class="star-label" for="star5">
+      <svg class="star" width="24" height="24">
+        <use href="/js_91_direct66612/assets/symbol-defs-f0e814bd.svg#icon-form-silver-star"></use>
+      </svg>
+    </label>
+    <span class="rating-number">0.0</span>
+  </div>
+  <input
+    class="rating-user-email"
+    type="email"
+    name="userEmail"
+    placeholder="Email"
+    required
+  />
+  <textarea
+    class="rating-user-comment"
+    name="comment"
+    minlength="5"
+    placeholder="Your comment"
+    required
+  ></textarea>
+  <button type="submit" class="rating-submit-btn">Send</button>
+</form>
+<!-- </div> -->
+
+</div>
+
+</section>
+</div>
+            <div class="favorites-exercise-wrapper">
+              <p class="favorites-not-found-text">
+                It appears that you haven't added any exercises to your
+                favorites yet. To get started, you can add exercises that you
+                like to your favorites for easier access in the future.
+              </p>
+              <div class="favorites-exercise-card-wrapper">
+            </div>
+
+            <nav class="pagination-nav"></nav>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    
+  </body>
+</html>

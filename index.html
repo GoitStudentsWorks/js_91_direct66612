@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/js_91_direct66612/workout.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Energy</title>
+    
+    <script type="module" crossorigin src="/js_91_direct66612/assets/index-00714d59.js"></script>
+    <link rel="modulepreload" crossorigin href="/js_91_direct66612/assets/pagination-markup-44073da6.js">
+    <link rel="stylesheet" href="/js_91_direct66612/assets/pagination-markup-75dcd497.css">
+  </head>
+  <body>
+    <header class="header">
+  <div class="container header__container">
+    <nav class="header__nav">
+      <a class="logo--header" href="./index.html">
+        <svg class="logo__svg" width="132" height="24">
+          <use
+            class="logo__use"
+            href="/js_91_direct66612/assets/symbol-defs-f0e814bd.svg#icon-logo-icon"
+          ></use>
+        </svg>
+      </a>
+      <ul class="header__list">
+        <li class="list__item">
+          <a class="list__link is-active" href="./index.html">Home</a>
+        </li>
+        <li class="list__item">
+          <a class="list__link" href="./favorites.html">Favorites</a>
+        </li>
+      </ul>
+      <address>
+        <ul class="header__address">
+          <li>
+            <a
+              class="address__link"
+              href="https://www.facebook.com/goITclub/"
+              target="_blank"
+            >
+              <svg class="address__svg" width="44" height="44">
+                <use href="/js_91_direct66612/assets/symbol-defs-f0e814bd.svg#icon-header-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              class="address__link zhopa"
+              href="https://www.instagram.com/goitclub/"
+              target="_blank"
+            >
+              <svg class="address__svg" width="44" height="44">
+                <use href="/js_91_direct66612/assets/symbol-defs-f0e814bd.svg#icon-header-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              class="address__link"
+              href="https://www.youtube.com/c/GoIT"
+              target="_blank"
+            >
+              <svg class="address__svg" width="44" height="44">
+                <use href="/js_91_direct66612/assets/symbol-defs-f0e814bd.svg#icon-header-youtube"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </address>
+    </nav>
+  </div>
+  <div class="mobile-menu">
+    <div class="container">
+      <div class="mobile-menu__wrapper">
+        <a class="logo--header" href="./index.html">
+          <svg class="logo__svg" width="132" height="24">
+            <use href="/js_91_direct66612/assets/symbol-defs-f0e814bd.svg#icon-logo-icon"></use>
+          </svg>
+        </a>
+        <button class="menu-mob__open-btn" data-menu-open type="button">
+          <svg class="menu-mob__open-ico" width="32" height="32">
+            <use href="/js_91_direct66612/assets/symbol-defs-f0e814bd.svg#icon-burger-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu__wrapper--wide" data-menu>
+        <div class="container--mobile">
+          <button class="menu-mob__close-btn" data-menu-close type="button">
+            <svg class="menu-mob__close-ico" width="32" height="32">
+              <use href="/js_91_direct66612/assets/symbol-defs-f0e814bd.svg#close"></use>
+            </svg>
+          </button>
+          <nav>
+            <ul class="mobile-list">
+              <li class="mobile-list__item">
+                <a class="mobile-list__text menu-box-link" href="./index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="mobile-list__item">
+                <a
+                  class="mobile-list__text menu-box-link--s"
+                  href="./favorites.html"
+                  >Favorites</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <address>
+            <ul class="header__address--mobile">
+              <li>
+                <a
+                  class="address__link--mobile"
+                  href="https://www.facebook.com/goITclub/"
+                  target="_blank"
+                >
+                  <svg class="address__svg--mobile" width="44" height="44">
+                    <use
+                      href="/js_91_direct66612/assets/symbol-defs-f0e814bd.svg#icon-header-facebook"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="address__link--mobile"
+                  href="https://www.instagram.com/goitclub/"
+                  target="_blank"
+                >
+                  <svg class="address__svg--mobile" width="44" height="44">
+                    <use
+                      href="/js_91_direct66612/assets/symbol-defs-f0e814bd.svg#icon-header-instagram"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="address__link--mobile"
+                  href="https://www.youtube.com/c/GoIT"
+                  target="_blank"
+                >
+                  <svg class="address__svg--mobile" width="44" height="44">
+                    <use href="/js_91_direct66612/assets/symbol-defs-f0e814bd.svg#icon-header-youtube"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <main>
+      <section class="hero">
+  <div class="container hero-container">
+    <h1 class="hero-title">
+      <picture class="hero-icon-star">
+        <source
+          srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAMAAAANIilAAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJcEhZcwAACxMAAAsTAQCanBgAAABgUExURUdwTCUlJSQkJCQkJCUlJSQkJCQkJCAgICAgICQkJCUlJSMjIyMjIyMjIyMjIyQkJCMjIyQkJCUlJSQkJCQkJCMjIyQkJCgoKCUlJSQkJCEhISMjIyQkJCUlJSQkJCQkJNRQG7sAAAAfdFJOUwBgcL8w74AgEEDfUGDfkM+fr6B/wF+wIJ+PH6DQbz8T1MD4AAADQ0lEQVQYGc3BWXLjRhBAwddrVTV2btrG7vvf0iAAUpoxKVIfjnAm/yvCxcs7F8pPvbxzITxHI5uXdzaRZxmbGNkYzzJlZcZKjKd5VmasGh4QrjIrM1aZK+WmhgtrWDQtC2dcNNymLRcTC9eyeOXCCXdIwyYbZ67lLPZsGuEuO7KykTPXcvYaWR0j3/BHVpMyy5mZdKyOnm/lI4ucmeXMzHsWx8wDuyNnL4lZzsyKcHbccYPyhQ7GWWiAvgfcgbM4KLeI8UmGyMwHYDcCoWUWB+GTCJ/MuJIuAloNdiNIFSAW4UKbRvlKXCtsLEUg9LAb4fUAxNSwUe+VP0k/CiufIvikhBNSW4gps9J9Vm6R3Sgs+iRoyoQDrgqSMgt7PQj3xCEYZ1MnhEQ4UE5ImTizcDC+40rXAlo6cdXCwdVWSqeAC53xiCtdK0jpYgqlC0lKJ+g+pZZn5NKNElMXak01lCS6Tykrz5FdrWOuKUfLqb691pSVm0TMvGvMRLiSXa1JmEmqdRSuRMycc02Mqqw0mu9Ph5RKCGF8y9nlzrPIaedyHscpDKWkXx+9b0S5RWPj+9OvVGeRRayz9OvU+yYqz9CmT5GFpSkqz1M3plozi32taWyUp6gLqaaPHJIwkxL8qdQ6tcID6kNNH16QoZa0N9unoXZCdKdSQyvcpT6kDy/MLCUfaqk11eBTF5lFdyqhFW6Q/e7DCau/6iCu5mEYur6alLpnFd1u8sJvzGUnXL3VHkpHHfsqpVNyfeNKnPeRjcS/hS9k6Az2VWJtXX23miGWQfhCzISZ8rtYegUpmabGl9rQJwXddZGH/ioNs9cOcoLk0fLGzBXPA28HYSZVYDrANIJVYyZhz3d08iyGDIQMfgD6wCIH4a44CQvXMUsGlgAtDQsJwh3HrKyKAFoVtCpgnbLyLTc5Y7PPzGxgNkRmfWZjLf+mTtnIwJkbmfUtMx2UjTTKH7Th6lU461tmrufMRq6MPyhXkllMkdnLiUVvfFLumVgFFgMLHXmCE1YHFhMra3msZRUzC//OyiuPODZmLKxhpS0PiLDxykI9myh8T7ho2XguIs9ybBouVHhSw8b4MY1sXpSfilwJP6VcKf+FfwB5JCK4aMjjAwAAAABJRU5ErkJggg== 1x, data:image/png;base64,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 2x"
+          media="(min-width: 1440px)"
+        />
+        <source
+          srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAMAAAANIilAAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJcEhZcwAACxMAAAsTAQCanBgAAABgUExURUdwTCUlJSQkJCQkJCUlJSQkJCQkJCAgICAgICQkJCUlJSMjIyMjIyMjIyMjIyQkJCMjIyQkJCUlJSQkJCQkJCMjIyQkJCgoKCUlJSQkJCEhISMjIyQkJCUlJSQkJCQkJNRQG7sAAAAfdFJOUwBgcL8w74AgEEDfUGDfkM+fr6B/wF+wIJ+PH6DQbz8T1MD4AAADQ0lEQVQYGc3BWXLjRhBAwddrVTV2btrG7vvf0iAAUpoxKVIfjnAm/yvCxcs7F8pPvbxzITxHI5uXdzaRZxmbGNkYzzJlZcZKjKd5VmasGh4QrjIrM1aZK+WmhgtrWDQtC2dcNNymLRcTC9eyeOXCCXdIwyYbZ67lLPZsGuEuO7KykTPXcvYaWR0j3/BHVpMyy5mZdKyOnm/lI4ucmeXMzHsWx8wDuyNnL4lZzsyKcHbccYPyhQ7GWWiAvgfcgbM4KLeI8UmGyMwHYDcCoWUWB+GTCJ/MuJIuAloNdiNIFSAW4UKbRvlKXCtsLEUg9LAb4fUAxNSwUe+VP0k/CiufIvikhBNSW4gps9J9Vm6R3Sgs+iRoyoQDrgqSMgt7PQj3xCEYZ1MnhEQ4UE5ImTizcDC+40rXAlo6cdXCwdVWSqeAC53xiCtdK0jpYgqlC0lKJ+g+pZZn5NKNElMXak01lCS6Tykrz5FdrWOuKUfLqb691pSVm0TMvGvMRLiSXa1JmEmqdRSuRMycc02Mqqw0mu9Ph5RKCGF8y9nlzrPIaedyHscpDKWkXx+9b0S5RWPj+9OvVGeRRayz9OvU+yYqz9CmT5GFpSkqz1M3plozi32taWyUp6gLqaaPHJIwkxL8qdQ6tcID6kNNH16QoZa0N9unoXZCdKdSQyvcpT6kDy/MLCUfaqk11eBTF5lFdyqhFW6Q/e7DCau/6iCu5mEYur6alLpnFd1u8sJvzGUnXL3VHkpHHfsqpVNyfeNKnPeRjcS/hS9k6Az2VWJtXX23miGWQfhCzISZ8rtYegUpmabGl9rQJwXddZGH/ioNs9cOcoLk0fLGzBXPA28HYSZVYDrANIJVYyZhz3d08iyGDIQMfgD6wCIH4a44CQvXMUsGlgAtDQsJwh3HrKyKAFoVtCpgnbLyLTc5Y7PPzGxgNkRmfWZjLf+mTtnIwJkbmfUtMx2UjTTKH7Th6lU461tmrufMRq6MPyhXkllMkdnLiUVvfFLumVgFFgMLHXmCE1YHFhMra3msZRUzC//OyiuPODZmLKxhpS0PiLDxykI9myh8T7ho2XguIs9ybBouVHhSw8b4MY1sXpSfilwJP6VcKf+FfwB5JCK4aMjjAwAAAABJRU5ErkJggg== 1x, data:image/png;base64,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 2x"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAMAAACf4xmcAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJcEhZcwAACxMAAAsTAQCanBgAAABgUExURUdwTCQkJCUlJSQkJCMjIyQkJCUlJSQkJCAgICAgICQkJCMjIyQkJCMjIyUlJSQkJCUlJSMjIyMjIyQkJCQkJCEhISQkJCgoKCQkJCUlJSYmJiMjIyUlJSQkJCQkJCQkJJeGxnEAAAAfdFJOUwCAMH9QcGBAECDvYL+QoK/fn9/PwB+PILBvL1+f4NDgoAG2AAABo0lEQVQYGbXBV3LbQBBAwbdxZhY5kJKceP9bagHaZQZQH65yN/+PsXk78TVVqrcTlRkvCdXbiSryWqOA91TCTrljbDQCIkA2NiceCBsHiACOzTeeJKosIALSUCWeqQN0gtjAmSoZN4wr+wA6JTfYBGTjjgk7CSCO3JAiBM/OjD9E2KQAM7mhhZCoNGduWA4GuEAXncsTwQGaknLP+smgD9I610rowc5OeWb9JLqE0g5zWFTa1Thma+vGUsplbtpVuGNeYs5RxAzyeOnAlUXAzEvOOYpX5Up9TN36q4xjoSrjWH6+dyl65UhcClVZIi/JuazDJaChDOs8Cc9UzkMn6sfhUsplnU2l66fILY2NEwU+FmmHeexbGROg4nJUrky8sjv3muf43jetWB+4Em8GKL/pkGA0l5KzRcmTccB6g+AYxE8kB/bDePK9AayHFloYFEgND7Kn6gzeYQALVNZwS0WpLIF20J0gCRtR/jJ2HSARogCOnedRNCAZaAOYcCxSJapEFZUjwiZRRTbCAVU2QhXZKAeUnVB5dsornp3yNWWn/JNPNnkPFe9ghlkAAAAASUVORK5CYII= 1x, data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEwAAABMCAMAAADwSaEZAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJcEhZcwAAFiUAABYlAUlSJPAAAABgUExURUdwTCUlJSQkJCUlJSQkJCQkJCQkJCAgICAgICQkJCMjIyMjIyUlJSMjIyQkJCMjIyMjIyQkJCQkJCQkJCUlJSQkJCQkJCUlJSgoKCEhISMjIyUlJSQkJCQkJCMjIyQkJGWYQ6YAAAAfdFJOUwAw79+/gHAgEEBQkGDff59gz7CvoMCPnyAfoG/g0F/d98BxAAAEa0lEQVRYw9WYR5LjOBBFP7yjp0x1dff8+99yFqABJUqiVLMZLqQIEnhIi0wA+H8/X79+Nl/8lzDvH8Gce58WSjFLOeMHosVCtBAerHJYz24fVvlPrFbtw8xHLigIcZUyHDbZRgPfrkJ2DwR7pvLW68nfw1yLw1ESy6/B3MMupS/dC5WrklbPopkFq0tW98pstjBD6m5hVaGlT699cFppQd/C+lVLPx4IOFcMUtPcNAkR6oJ1KEWFXmhmzP+nSbvropnXB9M99jMt0Jcwx5ng+8OxaxafaVPCLv3N+0NPmp1mZJ47ZBPa6fX1GetOfz3RPCMA6DMAVLOW1/EOUHpW3GxSXk00rVdY/gWu9U1QbPZOAK7aWtRNNMswYwS7ibVRxNudHc6Zphwk5CXr2QJQNYBr1vIiSzl8Y/Zj153aAlexAQAtfYY5ngGgoS1mXJ6Erju3q/EMGwCWJsMsOwANTZFt5+f1oFJ62QsSG8BLCUgJKHqgYTqMyrh6xmk2gGYEiYoD0LCfrb6OerELqfq3ywHCBoEaJDQjGmZH+kZKc7RIOUO2DoCTbLxkIB3lzHLvoLJjyVYAgWxOPJEj24YUQNDTQngTpyMsqUmS1KRF0ORZfFI3FVl3hiT//CXJS6XJ5y50XyEE5/cdS9aSyQPuRCnJOuxXSBGCmPomL4JNw9BrPbbG2Cou9EpxjqxESrvMjZU1l7bVuh++k407wngRbRr+ymwkKqX1KOd9x5Oj7pWaPso/Q7JRvPaqD9Gm89886zy/7VdIJd5vhXyImvUKGyvxQdc4sy6SlJMQjmTdxs9IsZUkpeJl2l/ZS5KyjW+q6CstSTlY8Ztk4wB/IWmFHSTJsTvM81ZnEIALqUjqnqQiGwAZqDt3jCS/bc4YpyntdQoFtobsM0LYQb3iuUbLb7sMEYq9c2TFWjGRwSmuxURUg+rtA15o9Pfm2z+SyUPRWA4n2kQNmDkLFuB4ucv7YMztIg3rAFSskWgtW6/YAUHlOlMCky0y1onqTlqvOXoAig6aQXBAYJ0z/r4iiTD3r3tudiqr09AAkoCsgZQrU6Xqt/IgyrPLUV8DnmdA08Mrmd/28o1EWArtlQ4ITECiAALbsqQeCtprLeZ0NAAiIxDZAUgMSytyKAmcWg4Tqs5iOMDTAPBKL632EcOFtaGe+rGxBoDcFQUupbfSLwv677XX9iq3Ff0AAKdcy5P0a/16bjhvivhupm0xB4mVmxVy6X9Gc6mww9xaf2WjC+ZzepDlmMcNvCjTbmmCAycBp9hKm4a2elCR48agYt777VRRtJ1NuRm3f7K7KX1qVmA+6sz/64lq585i/0xbrYfCaek43B329u5T9ty6rt7P+8FS83z/XkkpGu+Fofz9EflYt7fqsGh3WtUx7+xBxcpxiRfb7V0svM7PYmET9sIwHL/DKb1VhGj65HYpPNA4bbqHg9Z/ZL6NDz9oqjYSxF9Hb24O+MJ/0mbjkaHDD2HhnSR861LU/RDmf2jzz59/ATAJPXBe+NheAAAAAElFTkSuQmCC 2x"
+          media="(max-width: 767px)"
+        />
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAMAAACf4xmcAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJcEhZcwAACxMAAAsTAQCanBgAAABgUExURUdwTCQkJCUlJSQkJCMjIyQkJCUlJSQkJCAgICAgICQkJCMjIyQkJCMjIyUlJSQkJCUlJSMjIyMjIyQkJCQkJCEhISQkJCgoKCQkJCUlJSYmJiMjIyUlJSQkJCQkJCQkJJeGxnEAAAAfdFJOUwCAMH9QcGBAECDvYL+QoK/fn9/PwB+PILBvL1+f4NDgoAG2AAABo0lEQVQYGbXBV3LbQBBAwbdxZhY5kJKceP9bagHaZQZQH65yN/+PsXk78TVVqrcTlRkvCdXbiSryWqOA91TCTrljbDQCIkA2NiceCBsHiACOzTeeJKosIALSUCWeqQN0gtjAmSoZN4wr+wA6JTfYBGTjjgk7CSCO3JAiBM/OjD9E2KQAM7mhhZCoNGduWA4GuEAXncsTwQGaknLP+smgD9I610rowc5OeWb9JLqE0g5zWFTa1Thma+vGUsplbtpVuGNeYs5RxAzyeOnAlUXAzEvOOYpX5Up9TN36q4xjoSrjWH6+dyl65UhcClVZIi/JuazDJaChDOs8Cc9UzkMn6sfhUsplnU2l66fILY2NEwU+FmmHeexbGROg4nJUrky8sjv3muf43jetWB+4Em8GKL/pkGA0l5KzRcmTccB6g+AYxE8kB/bDePK9AayHFloYFEgND7Kn6gzeYQALVNZwS0WpLIF20J0gCRtR/jJ2HSARogCOnedRNCAZaAOYcCxSJapEFZUjwiZRRTbCAVU2QhXZKAeUnVB5dsornp3yNWWn/JNPNnkPFe9ghlkAAAAASUVORK5CYII="
+          alt="Star"
+          width="38"
+          height="38"
+        />
+      </picture>
+      Get <span class="hero-span">Body</span> in shape, Stay healthy
+    </h1>
+    <p class="hero-text">
+      Transform your physique and embrace a healthier lifestyle with our
+      comprehensive fitness and nutrition support.
+    </p>
+
+    <picture class="hero-img">
+      <source
+        srcset="/js_91_direct66612/assets/hero-bg-7887627c.jpg 1x, /js_91_direct66612/assets/hero-bg@2x-f92218be.jpg 2x"
+        media="(min-width: 1440px)"
+      />
+      <source
+        srcset="/js_91_direct66612/assets/hero-bg-tablet-831a2359.jpg 1x, /js_91_direct66612/assets/hero-bg-tablet@2x-2a15b9f6.jpg 2x"
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="/js_91_direct66612/assets/hero-bg-mobile-6fbe5392.jpg 1x, /js_91_direct66612/assets/hero-bg-mobile@2x-69f31a56.jpg 2x"
+        media="(max-width: 767px)"
+      />
+      <img
+        src="/js_91_direct66612/assets/hero-bg-mobile-6fbe5392.jpg"
+        alt="Women working-out outdoors"
+        width="335"
+        height="450"
+      />
+    </picture>
+
+    <div class="hero-tag">
+      <ul class="hero-tag-list">
+        <li class="hero-tag-item">#Sport</li>
+        <li class="hero-tag-item">#Healthy</li>
+        <li class="hero-tag-item">#Workout</li>
+        <li class="hero-tag-item">#Diet</li>
+      </ul>
+
+      <img
+        class="hero-img-small"
+        srcset="/js_91_direct66612/assets/hero-bg-small-9ab065c1.jpg 1x, /js_91_direct66612/assets/hero-bg-small@2x-6bde1585.jpg 2x"
+        src="../img/hero/hero-bg-small.jpg"
+        alt="Women doing fitness outdoors"
+        width="168"
+        height="100"
+      />
+    </div>
+  </div>
+</section>
+
+      <section class="exercises">
+  <div class="container exercises-container">
+    <header class="exercises-header">
+  <h2 class="exercises-main-title">Exercises</h2>
+
+  <div class="wrapper">
+    <form class="form js-form is-hidden">
+      <input
+        type="text"
+        class="find-exercise js-search"
+        placeholder="Search"
+        name="input"
+      />
+      <button type="button" name="button" class="submit-btn">
+        <svg class="submit-icon" width="26" height="26">
+          <use href="/js_91_direct66612/assets/symbol-defs-f0e814bd.svg#icon-search"></use>
+        </svg>
+      </button>
+    </form>
+
+    <ul
+      class="exercises-filter-list js-categories-list"
+      data-filter="Body parts"
+    >
+      <li class="filter-items">
+        <button
+          class="exercises-filter-btn filter-of-body-parts active"
+          data-category="Body parts"
+          disabled
+        >
+          Body parts
+        </button>
+      </li>
+      <li class="filter-items">
+        <button
+          class="exercises-filter-btn filter-of-muscles"
+          data-category="Muscles"
+        >
+          Muscles
+        </button>
+      </li>
+      <li class="filter-items">
+        <button
+          class="exercises-filter-btn filter-of-equipment"
+          data-category="Equipment"
+        >
+          Equipment
+        </button>
+      </li>
+    </ul>
+  </div>
+</header>
+
+
+    <div class="wrapper">
+      <div class="container-exercises-filter-buttons">
+  <div class="container-exercises-markup">
+    <ul class="list-for-new-exercises"></ul>
+  </div>
+
+  <nav class="pagination-nav"></nav>
+</div>
+
+      <div class="asidebar-container">
+  <div class="quote-container">
+    <div class="quote-icon-men">
+      <svg width="18" height="20">
+        <use href="/js_91_direct66612/assets/symbol-defs-f0e814bd.svg#icon-aside-men"></use>
+      </svg>
+    </div>
+    <div class="quote">
+      <div class="quote-title-container">
+        <h3 class="quote-title">Quote of the day</h3>
+        <svg class="quote-icon-marks" width="20" height="20">
+          <use href="/js_91_direct66612/assets/symbol-defs-f0e814bd.svg#icon-aside-marks"></use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="asidebar-img-container">
+    <picture>
+      <source
+        media="(max-width: 767px)"
+        srcset="/js_91_direct66612/assets/aside-bg-mobile-088606ef.jpg 1x, /js_91_direct66612/assets/aside-bg-mobile@2x-4023806a.jpg 2x"
+      />
+      <source
+        media="(max-width: 1439px)"
+        srcset="/js_91_direct66612/assets/aside-bg-tablet-a53d867a.jpg 1x, /js_91_direct66612/assets/aside-bg-tablet@2x-9f838452.jpg 2x"
+      />
+      <source
+        media="(min-width: 1440px)"
+        srcset="/js_91_direct66612/assets/aside-bg-153c8eb3.jpg 1x, /js_91_direct66612/assets/aside-bg@2x-68b4e5c5.jpg 2x"
+      />
+      <img
+        class="asidebar-img"
+        src="/js_91_direct66612/assets/aside-bg-mobile-088606ef.jpg"
+        alt="women sportswear taking break from workout"
+        width="335"
+        height="242"
+      />
+    </picture>
+  </div>
+  <div class="daily-sport-container">
+    <div class="icon-barbell">
+      <svg width="20" height="20">
+        <use href="/js_91_direct66612/assets/symbol-defs-f0e814bd.svg#icon-aside-barbell"></use>
+      </svg>
+    </div>
+    <div class="daily-sport-info">
+      <h3 class="daily-sport-title">110 min</h3>
+      <p class="daily-sport-subtitle">Daily norm of sports</p>
+      <p class="daily-sport-text">
+        The World Health Organization recommends at least 150 minutes of
+        moderate-intensity aerobic physical activity throughout the week for
+        adults aged 18-64. However, what happens if we adjust that number to 110
+        minutes every day? While it might seem like a high number to hit,
+        dedicating 110 minutes daily to sporting activities may offer
+        unparalleled benefits to physical health, mental well-being, and overall
+        quality of life.
+      </p>
+    </div>
+  </div>
+</div>
+
+    </div>
+
+    <div class="backdrop-ex is-hidden">
+  <div class="modal-ex is-hidden">
+    <button type="button" class="modal-close-btn">
+      <svg class="modal-close-btn-icon" width="20" height="20">
+        <use href="/js_91_direct66612/assets/symbol-defs-f0e814bd.svg#close"></use>
+      </svg>
+    </button>
+
+    <div class="ex-wrapper">
+      <img class="modal-img" src="#" alt="Name exercise" />
+      <div class="ex-info-wrapper">
+        <h2 class="ex-title">Air bake</h2>
+
+        <div class="rating-container">
+          <p class="ratinng-value">#</p>
+
+          <ul class="modal-rating-star-list">
+            <li class="modal-rating-star-item">
+              <svg class="modal-rating-star-icon" width="18" height="18">
+                <use
+                  href="/js_91_direct66612/assets/symbol-defs-f0e814bd.svg#icon-exercises-content-silver-star"
+                ></use>
+              </svg>
+            </li>
+            <li class="modal-rating-star-item">
+              <svg class="modal-rating-star-icon" width="18" height="18">
+                <use
+                  href="/js_91_direct66612/assets/symbol-defs-f0e814bd.svg#icon-exercises-content-silver-star"
+                ></use>
+              </svg>
+            </li>
+            <li class="modal-rating-star-item">
+              <svg class="modal-rating-star-icon" width="18" height="18">
+                <use
+                  href="/js_91_direct66612/assets/symbol-defs-f0e814bd.svg#icon-exercises-content-silver-star"
+                ></use>
+              </svg>
+            </li>
+            <li class="modal-rating-star-item">
+              <svg class="modal-rating-star-icon" width="18" height="18">
+                <use
+                  href="/js_91_direct66612/assets/symbol-defs-f0e814bd.svg#icon-exercises-content-silver-star"
+                ></use>
+              </svg>
+            </li>
+            <li class="modal-rating-star-item">
+              <svg class="modal-rating-star-icon" width="18" height="18">
+                <use
+                  href="/js_91_direct66612/assets/symbol-defs-f0e814bd.svg#icon-exercises-content-silver-star"
+                ></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <ul class="info-list"></ul>
+        <p class="ex-description">
+          This refers to your core muscles, which include the rectus abdominis,
+          obliques, and transverse abdominis. They're essential for maintaining
+          posture, stability, and generating force in many movements. Exercises
+          that target the abs include crunches, leg raises, and planks.
+        </p>
+      </div>
+    </div>
+    <div class="modal-btn-container">
+      <button class="btn-add-favorite" type="button">
+        Add to favorite
+        <svg
+          class="modal-heart-icon"
+          width="18"
+          height="18"
+          aria-hidden="true"
+          focusable="false"
+        >
+          <use href="/js_91_direct66612/assets/symbol-defs-f0e814bd.svg#icon-exercises-content-heart"></use>
+        </svg>
+      </button>
+      <button class="btn-give-rating" type="button" data-modal-rating-open>
+        Give a rating
+      </button>
+    </div>
+  </div>
+  <!-- <div class="backdrop"> -->
+
+<form class="rating-feedback-form visually-hidden">
+  <button class="close-rating-btn" type="button">
+    <svg class="close" width="24" height="24">
+      <use href="/js_91_direct66612/assets/symbol-defs-f0e814bd.svg#close"></use>
+    </svg>
+  </button>
+  <p class="rating-modal-title">Rating</p>
+
+  <div class="rating-stars">
+    <input class="star-radio" name="star" id="star1" type="radio" value="5" />
+    <label class="star-label" for="star1">
+      <svg class="star" width="24" height="24">
+        <use href="/js_91_direct66612/assets/symbol-defs-f0e814bd.svg#icon-form-silver-star"></use>
+      </svg>
+    </label>
+    <input class="star-radio" name="star" id="star2" type="radio" value="4" />
+    <label class="star-label" for="star2">
+      <svg class="star" width="24" height="24">
+        <use href="/js_91_direct66612/assets/symbol-defs-f0e814bd.svg#icon-form-silver-star"></use>
+      </svg>
+    </label>
+    <input class="star-radio" name="star" id="star3" type="radio" value="3" />
+    <label class="star-label" for="star3">
+      <svg class="star" width="24" height="24">
+        <use href="/js_91_direct66612/assets/symbol-defs-f0e814bd.svg#icon-form-silver-star"></use>
+      </svg>
+    </label>
+    <input class="star-radio" name="star" id="star4" type="radio" value="2" />
+    <label class="star-label" for="star4">
+      <svg class="star" width="24" height="24">
+        <use href="/js_91_direct66612/assets/symbol-defs-f0e814bd.svg#icon-form-silver-star"></use>
+      </svg>
+    </label>
+    <input class="star-radio" name="star" id="star5" type="radio" value="1" />
+    <label class="star-label" for="star5">
+      <svg class="star" width="24" height="24">
+        <use href="/js_91_direct66612/assets/symbol-defs-f0e814bd.svg#icon-form-silver-star"></use>
+      </svg>
+    </label>
+    <span class="rating-number">0.0</span>
+
+  </div>
+  <input
+    class="rating-user-email"
+    type="email"
+    name="userEmail"
+    placeholder="Email"
+    required
+  />
+  <textarea
+    class="rating-user-comment"
+    name="comment"
+    minlength="5"
+    placeholder="Your comment"
+    required
+  ></textarea>
+  <button type="submit" class="rating-submit-btn">Send</button>
+</form>
+<!-- </div> -->
+
+</div>
+
+  </div>
+</section>
+
+    </main>
+    <footer class="footer ">
+  <!-- Логотип -->
+  <div class="container">
+    <div class="container-ftr">
+      <div class="footer-container-ftr">
+        <div class="footer-logo-social">
+          <div class="footer-logo">
+            <a class="style-footer" href="./index.html" id="logo-link">
+              <svg class="footer-logo-link" width="132" height="24">
+                <use href="/js_91_direct66612/assets/symbol-defs-f0e814bd.svg#icon-logo-icon"></use>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Соціальні мережі -->
+          <div class="footer-social-section">
+            <ul class="footer-social-list">
+              <li class="footer-social-item">
+                <a class="footer-social-link link" href="https://www.facebook.com/goITclub/" target="_blank">
+                  <svg class="social-icons" width="28" height="28">
+                    <use href="/js_91_direct66612/assets/symbol-defs-f0e814bd.svg#icon-footer-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="footer-social-link link" href="https://www.instagram.com/goitclub/" target="_blank">
+                  <svg class="social-icons" width="28" height="28">
+                    <use href="/js_91_direct66612/assets/symbol-defs-f0e814bd.svg#icon-footer-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="footer-social-link link" href="https://www.youtube.com/c/GoIT" target="_blank">
+                  <svg class="social-icons" width="28" height="28">
+                    <use href="/js_91_direct66612/assets/symbol-defs-f0e814bd.svg#icon-footer-youtube"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-form">
+          <p class="footer-text">Transforming your <span class="italic-word">body</span> shape with us</p>
+        </div>
+
+        <div class="subscribe-form">
+          <p class="subscribe-text">Subscribe and learn about new exercises!</p>
+
+          <!-- Форма підписки -->
+          <form id="subscription-form">
+            <input type="email" id="email-input" placeholder="Email" required>
+            <button id="subscribe-button" type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+      <!-- Захист прав -->
+      <div class="copyright">
+        <p class="copyright-text">Your Energy. All rights reserved.</p>
+        <div class="copyright-footer-wrapper">
+          <div class="copyright-footer-text">
+            <a class="copyright-link" href="#">Privacy Policy</a>&nbsp; / &nbsp;<a class="copyright-link" href="#">Terms
+              of
+              Service</a>
+          </div>
+          <p class="copyright-ftr">&copy; 2023</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+    <button type="button" class="top-button">
+  <svg class="top-icon" width="13" height="13">
+    <use href="/js_91_direct66612/assets/symbol-defs-f0e814bd.svg#icon-scroll-arrow"></use>
+  </svg>
+</button>
+
+    <div class="subscribe-backdrop hidden">
+  <div class="subscribe-modal">
+    <button class="close-subscribe-btn" type="button" data-modal-close>
+      <svg class="close" width="24" height="24">
+        <use href="/js_91_direct66612/assets/symbol-defs-f0e814bd.svg#close"></use>
+      </svg>
+    </button>
+
+    <h2 class="subscribe-modal-title">
+      Subscribe and learn about new exercises!
+    </h2>
+
+    <div class="subscribe-img">
+      <!-- <img src="./img/gym.jpeg" alt="Gachi" /> -->
+    </div>
+
+    <form class="subscribe-modal-form">
+      <input
+        class="subscribe-email"
+        type="email"
+        name="email"
+        placeholder="Email"
+        required
+      />
+
+      <button type="submit" class="subscribe-submit-btn">Send</button>
+    </form>
+  </div>
+</div>
+
+
+    
+  </body>
+</html>
